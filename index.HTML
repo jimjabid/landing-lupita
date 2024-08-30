@@ -1,246 +1,377 @@
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maestra Lupita - Santería y Tarot</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #1c1c1c;
-            color: #e0e0e0;
-        }
-        header {
-            background-color: #333;
-            padding: 20px;
-            text-align: center;
-            color: #f1c40f;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        .hero {
-            position: relative;
-            background-image: url('https://www.univision.com/proxy/api/cached/picture?href=https%3A%2F%2Fst1.uvnimg.com%2Fc8%2F88%2Ffe0dbe8c407e96e0732bce2ef106%2Fcomo-leer-tarot-chatgpt-estilo-vida-univision.jpg&width=1920&height=1080&ratio_width=1240&ratio_height=698&format=webp');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            color: #fff;
-            text-align: center;
-            padding: 80px 20px;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin: 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-        .hero p {
-            font-size: 1.5em;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-        }
-        .section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .section img {
-            max-width: 100%;
-            height: auto;
-            border: 5px solid #f39c12;
-            border-radius: 10px;
-        }
-        .section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #f1c40f;
-        }
-        .section p {
-            font-size: 1.2em;
-        }
-        .cta {
-            background-color: #f39c12;
-            color: #1c1c1c;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .cta h2 {
-            margin: 0;
-        }
-        .cta a {
-            color: #1c1c1c;
-            font-weight: bold;
-            text-decoration: none;
-            background-color: #e67e22;
-            padding: 10px 20px;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        .cta a:hover {
-            background-color: #d35400;
-        }
-        footer {
-            background-color: #333;
-            color: #f1c40f;
-            text-align: center;
-            padding: 20px;
-        }
-        .contact-info {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 20px 0;
-            text-align: center;
-        }
-        .contact-info a {
-            color: #f39c12;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        .accordion {
-            background: #333;
-            border: 1px solid #f39c12;
-            border-radius: 5px;
-            margin: 10px 0;
-        }
-        .accordion-header {
-            background: #444;
-            color: #f1c40f;
-            cursor: pointer;
-            padding: 15px;
-            text-align: left;
-            font-size: 1.2em;
-            border-bottom: 1px solid #f39c12;
-        }
-        .accordion-content {
-            display: none;
-            padding: 15px;
-            background: #222;
-            color: #ddd;
-        }
-        .accordion-content p {
-            margin: 0;
-        }
-        .accordion-active .accordion-content {
-            display: block;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Maestra Lupita</h1>
-        <p>Santería y Lectura de Tarot</p>
-    </header>
+<html lang="es"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>Maestra Lupita</title>
+    <meta name="title" content="Maestra Lupita - Sra. Lupita">
+    <meta name="description" content="Soy Vidente de nacimiento con un Poder y un Don para recuperar a tu Pareja, recuperar el Amor Perdido, traer la Paz y Unión en las Familias.">
+    <meta name="keywords" content="tarot, videncia, videncia natural, vidente, toratista, abrecaminos, amarres, destrabes, retornos, esoterismo,">
+    <meta name="language" content="sp">
+    <meta name="geo.country" content="CO">
+    <meta name="geo.region" content="CO">
+    <meta name="geo.placename" content="Colombia, Barranquilla y el Atlantico">
+    <meta name="Geography" content="Colombia">
+    <meta name="Country" content="AR">
+    <meta name="city" content="Barranquilla">
+    <meta name="geo.position" content="">
+    <meta name="classification" content="astrology">
+    <meta name="distribution" content="global">
+    <meta name="audience" content="all">
+    <meta name="googlebot" content="index follow">
+    <meta name="copyright" content="">
+    <meta name="page-type" content="Commercial">
+    <!-- <meta name="author" content="“PublicarWeb" -="" https:="" www.publicarweb.com"=""> -->
+  
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8493d8f34a.js" crossorigin="anonymous"></script>
+    <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
+  
+    <!-- Template Main CSS File -->
+    <link href="./css/style.css" rel="stylesheet">
+    
+    <!-- Google Tag Manager -->
 
-    <div class="hero">
-        <h1>Descubre los Secretos Ocultos del Tarot</h1>
-        <p>Consulta con la Maestra Lupita y revela lo que el destino tiene preparado para ti.</p>
-    </div>
-
-    <div class="container">
-        <div class="section">
-            <h2>Servicios</h2>
-            <p>Ofrecemos una amplia gama de servicios espirituales y esotéricos para guiarte en tu camino. Explora nuestras ofertas y encuentra la que mejor se adapte a tus necesidades.</p>
-
-            <div class="accordion">
-                <div class="accordion-header">Lectura de Tarot</div>
-                <div class="accordion-content">
-                    <p>Descubre lo que el futuro te tiene reservado con una lectura detallada de tarot. Cada carta revelará aspectos importantes sobre tu vida y te proporcionará una guía clara para el camino por delante.</p>
-                </div>
-            </div>
-            <div class="accordion">
-                <div class="accordion-header">Baños Espirituales</div>
-                <div class="accordion-content">
-                    <p>Purifica tu energía y renueva tu espíritu con baños espirituales diseñados para limpiar y proteger tu aura. Estos baños están preparados con ingredientes específicos para cada necesidad.</p>
-                </div>
-            </div>
-            <div class="accordion">
-                <div class="accordion-header">Amarres Vudú</div>
-                <div class="accordion-content">
-                    <p>Realiza amarres vudú para fortalecer o transformar tus relaciones. Estos rituales están diseñados para influir en las energías y traer cambios positivos a tu vida amorosa.</p>
-                </div>
-            </div>
-            <div class="accordion">
-                <div class="accordion-header">Aseguranzas Espirituales</div>
-                <div class="accordion-content">
-                    <p>Protege tu bienestar y asegura tu camino con aseguranzas espirituales. Estos servicios están diseñados para ofrecerte protección y estabilidad en momentos de incertidumbre.</p>
-                </div>
-            </div>
-            <div class="accordion">
-                <div class="accordion-header">Rezos y Oraciones</div>
-                <div class="accordion-content">
-                    <p>Participa en rezos y oraciones personalizadas para invocar ayuda espiritual y recibir guía divina. Estos rituales están adaptados a tus necesidades y solicitudes específicas.</p>
-                </div>
-            </div>
-            <div class="accordion">
-                <div class="accordion-header">Fortuna y Predicciones</div>
-                <div class="accordion-content">
-                    <p>Descubre los aspectos futuros de tu vida con predicciones precisas que te ayudarán a prepararte para lo que viene. La lectura de fortuna te proporcionará insights valiosos.</p>
-                </div>
-            </div>
-            <div class="accordion">
-                <div class="accordion-header">Magia Blanca</div>
-                <div class="accordion-content">
-                    <p>Utiliza la magia blanca para atraer cosas positivas y realizar cambios benéficos en tu vida. Estos rituales están orientados a la creación de bienestar y prosperidad.</p>
-                </div>
-            </div>
-            <div class="accordion">
-                <div class="accordion-header">Magia Negra</div>
-                <div class="accordion-content">
-                    <p>Explora la magia negra para resolver problemas difíciles o influir en situaciones específicas. Estos rituales se aplican con intención y cuidado para lograr los efectos deseados.</p>
-                </div>
-            </div>
-
-            <img src="https://justiciayderecho.org/wp-content/uploads/2020/07/art7.jpg" alt="Tarot" />
+  <!-- End Google Tag Manager -->
+    
+    
+  </head>
+  
+  <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0"><button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
+  
+  
+  
+  
+    <a href="https://api.whatsapp.com/send?phone=573242048218" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+  
+    <!-- ======= Header ======= -->
+    <header id="header" class="header-scrolled">
+      <div class="container">
+  
+        <div id="logo" class="pull-left">
+          <!-- Uncomment below if you prefer to use a text logo -->
+          <h1><a href="#intro">Maestra <span>Lupita</span></a></h1>
         </div>
-
-        <div class="section">
-            <h2>Sobre la Maestra Lupita</h2>
-            <p>La Maestra Lupita es una experta en santería y tarot con más de 20 años de experiencia. Su conocimiento profundo y su conexión espiritual te ayudarán a encontrar claridad y dirección en tu vida. Cada consulta está diseñada para ofrecerte una guía personalizada y reveladora.</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShP_yLePrQJHD5usn2fx6UlUfe_VyLPp0pEr4W0SyFwj6XHh4ccFKHrXEJknPxGJ4eyzA&usqp=CAU" alt="Maestra Lupita" />
+  
+        <nav id="nav-menu-container">
+          <ul class="nav-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+            <li class="menu-active"><a href="index.html">Inicio</a></li>
+            <li><a href="tel:+573242048218" target="_blank" rel="nofollow">324-204-8218</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">WhatsApp <span style="text-decoration: underline;">aquí!</span></a></li>
+            <li class="buy-tickets"><a href="tel:+573242048218" target="_blank" rel="nofollow">¡Llamame!</a></li>
+          </ul>
+        </nav><!-- #nav-menu-container -->
+      </div>
+    </header><!-- End Header -->
+  
+    <!-- ======= Intro Section ======= -->
+    <section id="intro">
+      <div class="intro-container aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+        <h1 class="mb-4 pb-0">¿Temores?¿Dudas? <br><span>¿Problemas de Amor? </span></h1>
+        <p class="mb-4 pb-0">Soy Tarotista y Vidente Natural.</p>
+        <a href="#speakers-details" class="about-btn scrollto">Consultame estoy ON-LINE</a>
+      </div>
+    </section><!-- End Intro Section -->
+  
+    <main id="main">
+  
+      <!-- ======= Speaker Details Sectionn ======= -->
+   
+     
+  <section id="speakers-details">
+        <div class="container">
+          <div class="container">
+           <div align="center"> <h1 style="color:#d03362;font-weight: bolder;">Soy Vidente y Tarotista Profesional<!--1-->
+            <div align="center"><h4>Mi experiencia como tarotista y vidente te ayudará a resolver tus inquietudes y problemas.
+  Confía en mi tarot para tomar decisiones en tu vida, especialmente las relacionadas con los sentimientos y la pareja ¿volverá tu amor? ¿problemas de salud? ¿preguntas sobre trabajo y futuro?</h4><h4>
+  
+      <!-- ======= Venue Section ======= -->
+      
+    <section id="speakers">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+  
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="speaker aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                <img src="./img/servicios/tarot.jpg" alt="Tarot" class="img-fluid">
+                <div class="details">
+                  <h3>Tarot</h3>
+                  <p>¡Consulta <span style="text-decoration:underline;">aquí!</span></p>
+                </div>
+              </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="speaker aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                <img src="./img/servicios/videncia.jpg" alt="Videncia" class="img-fluid">
+                <div class="details">
+                  <h3>Videncia</h3>
+                  <p>¡Consulta <span style="text-decoration:underline;">aquí!</span></p>
+                </div>
+              </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="speaker aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                <img src="./img/servicios/limpiezaespiritual.jpg" alt="Limpieza Espiritual" class="img-fluid">
+                <div class="details">
+                  <h3>Limpieza Espiritual</h3>
+                  <p>¡Consulta <span style="text-decoration:underline;">aquí!</span></p>
+                </div>
+              </a>
+              </div>
+            </div>
+  
+            </div>
+  
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="speaker aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                  <a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                  <img src="./img/servicios/dinero.jpg" alt="Problemas de Dinero" class="img-fluid">
+                  <div class="details">
+                    <h3>Dinero</h3>
+                    <p>¡Consulta <span style="text-decoration:underline;">aquí!</span></p>
+                  </div>
+                </a>
+                </div>
+              </div>
+  
+              <div class="col-lg-4 col-md-6">
+                <div class="speaker aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                  <a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                  <img src="./img/servicios/abrecaminos2.jpg" alt="Abre Caminos" class="img-fluid">
+                  <div class="details">
+                    <h3>Abre Caminos</h3>
+                    <p>¡Consulta <span style="text-decoration:underline;">aquí!</span></p>
+                  </div>
+                </a>
+                </div>
+              </div>
+  
+              <div class="col-lg-4 col-md-6">
+                <div class="speaker aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                  <a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                  <img src="./img/servicios/unionparejas.jpg" alt="Unión de Parejas" class="img-fluid">
+                  <div class="details">
+                    <h3>Unión de Parejas</h3>
+                    <p>¡Consulta <span style="text-decoration:underline;">aquí!</span></p>
+                  </div>
+                </a>
+                </div>
+              </div>
+  
+              </div>
+  
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="speaker aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                    <img src="./img/servicios/unionfamiliar.jpg" alt="Uniones familires" class="img-fluid">
+                    <div class="details">
+                      <h3>Uniones familires</h3>
+                      <p>¡Consulta <span style="text-decoration:underline;">aquí!</span></p>
+                    </div>
+                  </a>
+                  </div>
+                </div>
+  
+                <div class="col-lg-4 col-md-6">
+                  <div class="speaker aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                    <img src="./img/servicios/retornosamor.jpg" alt="Retornos de Amor" class="img-fluid">
+                    <div class="details">
+                      <h3>Retornos</h3>
+                      <p>¡Consulta <span style="text-decoration:underline;">aquí!</span></p>
+                    </div>
+                  </a>
+                  </div>
+                </div>
+  
+                <div class="col-lg-4 col-md-6">
+                  <div class="speaker aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                    <img src="./img/servicios/malasuerte.jpg" alt="Mala Suerte" class="img-fluid">
+                    <div class="details">
+                      <h3>Mala Suerte</h3>
+                      <p>¡Consulta <span style="text-decoration:underline;">aquí!</span></p>
+                    </div>
+                  </a>
+                  </div>
+                </div>
+  
+          </div>
         </div>
-
-        <div class="cta">
-            <h2>¡Consulta Ahora!</h2>
-            <p>No esperes más para conocer lo que el destino tiene para ti. ¡Agenda tu consulta con la Maestra Lupita hoy mismo y transforma tu vida!</p>
-            <a href="https://wa.me/+573242048218" target="_blank">Contáctanos por WhatsApp</a>
+  
+  
+     
+  <!-- ======= Speaker Details Sectionn ======= -->
+      
+          <div class="container">
+            <h1 style="color:#d03362;font-weight: bolder;">¿Por qué Elegirme?</h1>
+            <div align="center"><h4>Tengo un Don Natural de Nacimiento</h4><h4>
+          </h4></div>
+  
+          <div class="row">
+            <div class="col-md-6">
+              <a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                <img src="./img/taro111a.jpg" alt="Speaker 1" class="img-fluid" style="border-radius: 5%;">
+             </a>
+            </div>
+  
+            <div class="col-md-6" style="padding-top:20px;">
+              <div class="details">
+                <h4>En mis consultas de Tarot y Videncia siempre he dicho la Verdad, lo que me ha dictado mi Videncia y Cartas del Tarot, por eso me he podido dedicar toda mi vida a la profesión para la que nací, Mi don de Videncia es Real,desde  que tengo uso de razón me he considerado y mis allegados me han considerado Vidente.</h4>
+                <h2 style="color:#d03362;">Consultame, no te arrepentirás!</h2>
+                </div>
+                <div class="" style="padding-bottom:30px;">
+              <a href="tel:+573242048218" target="_blank" rel="nofollow">
+                <h3>Tel:+57 3242048218</h3>
+                
+                </a><div class=""><a href="tel:+573242048218" target="_blank" rel="nofollow">
+              </a><a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                <h3>Respondo WhatsApp</h3>
+              </a> 
+             
+           </div>
+            </div>
+  
+          </div>
+      
+    </div></div></section></h4></div></h1></div></div></div></section></main>
+    
+     <!-- ======= Speakers Section ======= -->
+        <section id="subscribe">
+        <div class="container aos-init aos-animate" data-aos="zoom-in">
+          <div class="section-header">
+            <p>Trabajo de manera Presencial y a Distancia.</p>
+            <h2>Con el mismo Resultado</h2>
+            <p>Estoy Online las 24 Hs.</p>
+            <p>Escribime y te ayudaré a encontrar la Solución</p><br>
+            <div class="form-row justify-content-center">
+              <div class="col-auto">
+                <a href="tel:+573242048218" target="_blank" rel="nofollow"><button type="submit">¡Consultame!</button></a>
+              </div>
+            </div>
+          </div>
+          
+  
         </div>
-
-        <div class="contact-info">
-            <h2>Contacta a la Maestra Lupita</h2>
-            <p>Para consultas y más información:</p>
-            <p><a href="https://www.facebook.com/MaestraLupita" target="_blank">Página de Facebook: Maestra Lupita</a></p>
-            <p>WhatsApp: <a href="https://wa.me/+573242048218" target="_blank">+573242048218</a></p>
+      </section><!-- End Subscribe Section -->
+      
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="section-bg">
+      
+       <div align="center"><h1 style="color:#d03362;font-weight: bolder;">Mis Trabajos</h1>
+            <div align="center"><h4>Utilizo todo tipo de materiales y velas para darte mi servicio.</h4><h4>
+          </h4></div>
+  
+        <div class="container-fluid venue-gallery-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <div class="row no-gutters">
+        
+        
+          <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                  <img src="./img/venue-gallery/vela1a.jpg" alt="Libero las Malas Vibras" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                  <img src="./img/venue-gallery/vela2a.jpg" alt="Corto todo tipo de daños" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                  <img src="./img/venue-gallery/vela4a.jpg" alt="Limpieza de Empresas" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">
+                  <img src="./img/venue-gallery/vela3a.jpg" alt="Aclaro dudas y conflictos" class="img-fluid">
+                </a>
+              </div>
+      
+  
+   </div>
+    <div align="center"><h3 style="color:#;font-weight: bolder;">Todos los días las 24hs.</h3>
+         <div align="center"><h4></h4><h4>
+        <div align="center">
+          <!-- <img style="background-color:#fff; width:60%;" src="assets/img/mp.png"><br><br> -->
+          <h5 style="color:#000;">Efectivo, Transferencia y Nequi,<p></p>
+        </h5></div>
+  
+      </h4></div></div></div></div></div></section><!-- End Contact Section -->
+  
+  
+  
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+  
+      <div class="container">
+        <div class="copyright">
+          2022 © Copyright <strong>Maestra Lupita - Sra. Lupita</strong>. Derechos reservados
         </div>
-    </div>
+        <div class="credits">
+          Posicionamiento Web <a href="" _blank"="" rel="nofollow">
+            <span style="text-decoration:underline; color:#FFF">LtmMarketing</span></a>
+        </div>
+      </div>
+    </footer><!-- End  Footer -->
+  
+    <!-- Vendor JS Files -->
 
-    <footer>
-        <p>&copy; 2024 Maestra Lupita. Todos los derechos reservados.</p>
-    </footer>
-
-    <script>
-        document.querySelectorAll('.accordion-header').forEach(header => {
-            header.addEventListener('click', () => {
-                const accordion = header.parentElement;
-                const isActive = accordion.classList.contains('accordion-active');
-
-                // Close all open accordions
-                document.querySelectorAll('.accordion').forEach(acc => acc.classList.remove('accordion-active'));
-
-                // Toggle the clicked accordion
-                if (!isActive) {
-                    accordion.classList.add('accordion-active');
-                }
-            });
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/superfish/superfish.min.js"></script>
+    <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script> -->
+  
+    <!-- Template Main JS File -->
+    <script src="./js/main.js"></script><nav id="mobile-nav">
+          <ul class="" style="touch-action: pan-y;" id="">
+            <li class=""><a href="index.html">Inicio</a></li>
+            <li><a href="tel:+573242048218" target="_blank" rel="nofollow"> 324-204-8218</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=573242048218" target="_blank" rel="nofollow">WhatsApp <span style="text-decoration: underline;">aquí!</span></a></li>
+            <li class="buy-tickets"><a href="tel:+573242048218" target="_blank" rel="nofollow">¡Llamame!</a></li>
+          </ul>
+        </nav><div id="mobile-body-overly"></div>
+  
+  
+  <!-- Google Tag Manager (noscript) -->
+ 
+  
 </body>
 </html>
