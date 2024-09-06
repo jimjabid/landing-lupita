@@ -186,9 +186,9 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
   line-height: 0;
 }
-.claim--sticky .claim__text a {
+.claim--sticky  a {
 text-decoration: none;
-font-weight: bold ;
+
 }
 
 .here{
@@ -198,7 +198,7 @@ font-weight: bold ;
   border-radius: 50px;
   border: 2px solid #f5a193;
   transition: all ease-in-out 0.3s;
-  font-weight: 500;
+  font-weight: bold;
   margin-left: 8px;
   margin-top: 2px;
   line-height: 1;
