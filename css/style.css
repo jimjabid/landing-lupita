@@ -163,13 +163,20 @@ h1, h2, h3, h4, h5, h6 {
     gap: 8px;
     justify-content: center;
     padding: 25px 16px 0px;
+   
     /* width: 250px; */
     width: 25%;
 }
 
+
+
 @media (max-width : 550px) {
   .claim--sticky{
-    width: auto;
+    width: 70%;
+  }
+
+  .float{
+    display: none;
   }
 }
 
@@ -196,8 +203,17 @@ font-weight: bold ;
   margin-top: 2px;
   line-height: 1;
   font-size: 13px;
+  animation: jumpAndWiggle 1.8s ease-in-out infinite;
 }
 
+@keyframes jumpAndWiggle {
+  0% { transform: translateY(0); }
+  10% { transform: translateY(-15px) rotate(-5deg); } /* Jump up and wiggle to the left */
+  20% { transform: translateY(-15px) rotate(5deg); }  /* Wiggle to the right */
+  30% { transform: translateY(-15px) rotate(0deg); }  /* Back to center */
+  40% { transform: translateY(0); }                   /* Jump down */
+  100% { transform: translateY(0); }                  /* Pause at the bottom */
+}
 
 .custom-div p {
   margin: 5px;
