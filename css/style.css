@@ -167,6 +167,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 25%;
 }
 
+@media (max-width : 550px) {
+  .claim--sticky{
+    width: auto;
+  }
+}
+
 .claim--sticky .claim__text {
   color: #fff;
   text-align: center;
